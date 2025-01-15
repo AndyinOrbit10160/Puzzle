@@ -37,22 +37,13 @@
 // solution.  This is actually pretty easy.  It can be solved with a single line
 // of code.  An if-statement is not required nor is it a good idea.  
 bool matches(char* line) {
-  return 0;
+
+  char* str = "hello world";
+
+  return strcmp (line, str) == 0;
 }
 
-/* Main
- * Returns success if the input string matches (above).  Otherwise, it returns
- * failure.  
- *
- * There are really two failure modes: gitline falure, input mismatch.  In the
- * former case, perror is used to display the error condition set by getline.
- * In the latter case, the a brief error message is printed.  
- *
- * Note the if-statement that removes the trailing new-line.  The last character
- * from getline does not have to be a new-line, so the if-statement is
- * required.
- */
-// Do not modify this function!
+
 int main() {
   bool   isSuccess = false;
   char*  line = NULL;
